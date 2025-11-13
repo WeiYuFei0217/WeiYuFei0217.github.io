@@ -12,8 +12,6 @@
 [![Google Scholar](https://img.shields.io/badge/Google%20Scholar-Profile-green)](https://scholar.google.com/citations?user=68ftKf4AAAAJ)
 [![GitHub](https://img.shields.io/badge/GitHub-WeiYuFei0217-black)](https://github.com/WeiYuFei0217)
 
-<img src="wechat_qr.png" alt="WeChat QR Code" width="100"/>
-
 </div>
 
 ---
