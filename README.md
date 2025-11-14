@@ -237,7 +237,7 @@ Designed and led the development of a full-stack perception and navigation syste
 
 ---
 
-### 🌾 Provincial Major R&D Program - Agricultural Automation System
+### 🌾 Provincial Key R&D Program - Agricultural Automation System
 Designed and led the development of a vision-only navigation system for agricultural machinery, covering the complete sensing architecture, perception stack, and visual–inertial odometry framework. Built a four-camera and IMU perception module with a dedicated vibration-attenuating structure and implemented a multi-view visual–inertial fusion system optimized for low-texture, high-vibration agricultural environments. Integrated the system with an error-compensation tracking controller and demonstrated centimeter-level trajectory accuracy in rice-transplanter farmland trials when compared against RTK-INS ground truth.
 
 ---
