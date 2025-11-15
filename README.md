@@ -242,7 +242,7 @@ Designed and led the development of a vision-only navigation system for agricult
 
 ---
 
-### 🦾 ZJU & ZJH (Zhejiang Humanoid Robot Innovation Center) – Wheeled Humanoid Perception & Navigation System
+### 🦾 ZJU & Zhejiang Humanoid Robot Innovation Center – Wheeled Humanoid Perception & Navigation System
 Developed the perception and navigation subsystem for a wheeled humanoid robot platform. Built a vision-centric BEV representation from multi-camera inputs to generate dense costmaps and 3-DoF pose estimates. Integrated the perception layer with A* global planning and TEB local optimization, enabling reliable, obstacle-aware visual navigation for the humanoid robot's wheeled base.
 
 ---
