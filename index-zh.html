@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>魏雨飞 (Yufei Wei) — 个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="alternate" hreflang="en" href="https://weiyufei0217.github.io/index.html">
+    <link rel="alternate" hreflang="zh-CN" href="https://weiyufei0217.github.io/index-zh.html">
+    <link rel="alternate" hreflang="x-default" href="https://weiyufei0217.github.io/index.html">
+</head>
+<body>
+    <div class="container">
+        <div class="lang-switch">
+            <a href="index.html">EN</a><span class="sep">|</span><span class="current">中文</span>
+        </div>
+        <!-- Profile Header -->
+        <header class="profile-header">
+            <div class="profile-info">
+                <h1>魏雨飞 (Yufei Wei)</h1>
+                <div class="title">🎓 浙江大学 博士研究生</div>
+                <div class="title">🏫 控制科学与工程学院</div>
+                <div class="title">🤖 3D 视觉 · 世界模型 · 具身智能 研究者</div>
+                
+                <div class="contact-info">
+                    <img src="wechat_qr.png" alt="WeChat" style="width:100px;height:100px;border-radius:4px;">
+                    <a href="mailto:wyf00@zju.edu.cn" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?user=68ftKf4AAAAJ" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+                    <a href="https://github.com/WeiYuFei0217" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="profile-photo">
+                <img src="profile_photo.jpg" alt="魏雨飞" onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:300px;background:#e0e0e0;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#999;\'>照片</div>'">
+            </div>
+        </header>
+
+        <!-- Biography Section -->
+        <section id="biography">
+            <h2>个人简介</h2>
+            <p>你好！我是魏雨飞，浙江大学控制科学与工程学院的博士研究生，导师为王越教授与熊蓉教授。我的研究聚焦于 3D 视觉感知、世界模型与具身智能：我希望让机器人真正理解并与现实世界交互，而不只是穿行其间。</p>
+            <p>我早期的工作聚焦于单目视觉里程计、鸟瞰图（BEV）表征与视觉定位，成果发表于 IEEE RA-L、IROS 等期刊与会议，致力于解决移动机器人在复杂环境中降低尺度漂移、实现鲁棒定位等实际问题。作为合作者，我还参与了基于学习的导航规划、多传感器融合定位，以及农业自动化、医疗机器人与四足机器人等应用方向。目前，我正在探索世界模型构建与视觉语言导航，关注通过统一表征实现的跨模态融合，并借助多模态大语言模型完成场景理解与导航任务。</p>
+            <p>本科期间，我带领团队获得过五项自动驾驶与机器人竞赛的全国冠军，参与了 PaddlePaddle 开源社区，并研发了一款轻量级无人配送车。我还曾在深圳李泽湘创业孵化基地担任一个智能人体工学椅创业项目的团队负责人，并到广西玉林的一所小学支教。在深圳 InnoX 科创学院实习期间，我参与研发了基于语义线段建图的 LiDAR-IMU SLAM 系统，以及面向自动驾驶清扫车的避障算法。最近，作为 Momenta 世界模型预研组的核心成员，我参与了下一代端到端自动驾驶世界模型的研发。无论是研究还是实际部署，我都更看重构建真正可用的系统，而非一味追求理论上的优雅。</p>
+            <p>我始终乐于合作、交流想法并向他人学习。如果你正在做视觉感知、世界模型、具身智能，或任何能让机器人更接近理解世界的工作，欢迎随时与我交流！🤖</p>
+        </section>
+
+<!-- News Section -->
+        <section id="news">
+            <h2>最新动态</h2>
+            <div class="news-item">
+                <span class="news-date">2026.06</span>
+                <span>第一作者预印本 <strong>G2G</strong> 发布于 arXiv：一个 group-to-group 位姿估计框架，为具身世界模型提供 3D 一致的几何基础，在跨序列重定位与多相机 rig 里程计上达到 SOTA。</span>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2025.09</span>
+                <span>第一作者预印本 <strong>BEV-ODOM2</strong> 发布于 arXiv，探索引入 PV-BEV 融合与稠密光流辅助监督，用于基于 BEV 的 3 自由度单目视觉里程计。</span>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2025.02</span>
+                <span>第一作者论文 <strong>BEV-DWPVO</strong> 被 <strong>IEEE RA-L</strong> 接收，利用 BEV 表征与可微分加权 Procrustes 求解器取得最优平均 RTE，并具备出色的尺度一致性。</span>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2024.12</span>
+                <span>第一作者预印本 <strong>Multi-cam Multi-map Visual Inertial Localization</strong> 发布于 arXiv，提出一套多相机多地图视觉惯性定位系统，并配套保持因果性的评估指标。</span>
+            </div>
+            <div class="news-item">
+                <span class="news-date">2024.10</span>
+                <span>第一作者论文 <strong>BEV-ODOM</strong> 发表于 <strong>IROS 2024</strong>，证明仅凭 BEV 表征即可在单目视觉里程计中实现低尺度漂移。</span>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education">
+            <h2>教育经历</h2>
+            <div class="education-item">
+                <h3>浙江大学 (Zhejiang University)</h3>
+                <div class="education-details">
+                    <strong>博士研究生</strong> | 控制科学与工程 | 2022.09 - 2027.06（预计）
+                </div>
+                <div class="education-details">
+                    导师：王越教授、熊蓉教授
+                </div>
+                <div class="education-details">
+                    研究方向：3D 视觉感知、世界模型、具身智能
+                </div>
+            </div>
+
+            <div class="education-item">
+                <h3>华中科技大学 (Huazhong University of Science and Technology)</h3>
+                <div class="education-details">
+                    <strong>工学学士</strong> | 电子信息工程 | 2018.09 - 2022.06
+                </div>
+                <div class="education-details">
+                    电子信息与通信学院
+                </div>
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications">
+            <h2>学术论文 <a href="https://scholar.google.com/citations?user=68ftKf4AAAAJ" target="_blank" class="scholar-link">[我的 Google Scholar]</a></h2>
+            
+            <h3 style="margin-top: 30px; margin-bottom: 20px; color: #0066cc;">第一作者论文</h3>
+
+            <div class="publication-item">
+                <div class="publication-image">
+                    <img src="paper_images/G2G.jpg" alt="G2G" onerror="this.parentElement.innerHTML='Image<br>G2G'">
+                </div>
+                <div class="publication-content">
+                    <h3><a href="https://arxiv.org/abs/2606.08284" target="_blank">G2G: Exploiting Intra-Group Geometry for Inter-Group Pose Estimation</a></h3>
+                    <div class="publication-authors">
+                        <strong>Yufei Wei</strong>*, Shuhao Ye*, Chenxiao Hu, Yiyuan Pan, Dongyu Feng, Rong Xiong, Yue Wang, Yanmei Jiao† (* equal contribution, † corresponding author)
+                    </div>
+                    <div class="publication-venue">
+                        arXiv preprint - <strong>Under Review</strong>
+                    </div>
+                    <div class="publication-description">
+                        G2G 通过一个 group-to-group 位姿估计框架，为具身世界模型提供 3D 一致的几何基础。它冻结一个多视图基础模型，仅引入轻量可训练参数（&lt;6% 的完整模型），在单次前向中、仅用相对位姿监督即可估计组间 6 自由度位姿，统一了跨序列重定位与多相机 rig 里程计，并在多个室内/室外数据集上取得最先进结果。<strong>（审稿中）</strong>
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2606.08284" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/WeiYuFei0217/G2G" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="publication-item">
+                <div class="publication-image">
+                    <img src="paper_images/bev_odom2.jpg" alt="BEV-ODOM2" onerror="this.parentElement.innerHTML='Image<br>BEV-ODOM2'">
+                </div>
+                <div class="publication-content">
+                    <h3><a href="https://arxiv.org/abs/2509.14636" target="_blank">BEV-ODOM2: Enhanced BEV-based Monocular Visual Odometry with PV-BEV Fusion and Dense Flow Supervision for Ground Robots</a></h3>
+                    <div class="publication-authors">
+                        <strong>Yufei Wei</strong>, Wangtao Lu, Sha Lu, Chenxiao Hu, Fuzhang Han, Rong Xiong, Yue Wang
+                    </div>
+                    <div class="publication-venue">
+                        arXiv preprint - <strong>Under Review</strong>
+                    </div>
+                    <div class="publication-description">
+                        BEV-ODOM2 直接从位姿真值构造稠密 BEV 光流监督，并采用 PV-BEV 双分支融合，在不引入额外标注的情况下缓解监督稀疏与信息损失。相比现有 BEV 方法取得 40% 的 RTE 提升，在多个数据集上达到最先进性能，同时保持出色的尺度一致性。<strong>（审稿中）</strong>
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2509.14636" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/WeiYuFei0217/BEV-ODOM2" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-image">
+                    <img src="paper_images/bev_dwpvo.jpg" alt="BEV-DWPVO" onerror="this.parentElement.innerHTML='Image<br>BEV-DWPVO'">
+                </div>
+                <div class="publication-content">
+                    <h3><a href="https://arxiv.org/abs/2502.20078" target="_blank">BEV-DWPVO: BEV-based Differentiable Weighted Procrustes for Low Scale-drift Monocular Visual Odometry on Ground</a></h3>
+                    <div class="publication-authors">
+                        <strong>Yufei Wei</strong>, Sha Lu, Wangtao Lu, Rong Xiong, Yue Wang
+                    </div>
+                    <div class="publication-venue">
+                        IEEE Robotics and Automation Letters (RA-L), 2025
+                    </div>
+                    <div class="publication-description">
+                        BEV-DWPVO 利用统一的公制尺度 BEV 表征与可微分加权 Procrustes 求解器，解决单目视觉里程计中的尺度漂移问题。通过将位姿估计简化为 3 自由度、仅用位姿监督端到端训练，它在 NCLT 与 Oxford 数据集上取得 8.67% 与 6.92% 的最优平均 RTE，无需深度估计或分割监督即可获得出色的尺度一致性。
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10909180" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/WeiYuFei0217/BEV-DWPVO" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-image">
+                    <img src="paper_images/bev_odom.jpg" alt="BEV-ODOM" onerror="this.parentElement.innerHTML='Image<br>BEV-ODOM'">
+                </div>
+                <div class="publication-content">
+                    <h3><a href="https://arxiv.org/abs/2411.10195 " target="_blank">BEV-ODOM: Reducing Scale Drift in Monocular Visual Odometry with BEV Representation</a></h3>
+                    <div class="publication-authors">
+                        <strong>Yufei Wei</strong>, Sha Lu, Fuzhang Han, Rong Xiong, Yue Wang
+                    </div>
+                    <div class="publication-venue">
+                        2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 349-356
+                    </div>
+                    <div class="publication-description">
+                        BEV-ODOM 首次证明：无需分割或辅助任务，仅凭 BEV 表征即可在单目视觉里程计中实现低尺度漂移。它采用基于相关性的特征提取与 3 自由度位姿回归、仅用位姿监督，揭示出尺度一致性源自 BEV 固有的公制尺度栅格结构而非附加任务，提供了一种更简洁、更可解释的方案。
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10801996" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-item">
+                <div class="publication-image">
+                    <img src="paper_images/multi_cam.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+                </div>
+                <div class="publication-content">
+                    <h3><a href="https://arxiv.org/abs/2412.04287" target="_blank">Multi-cam Multi-map Visual Inertial Localization: System, Validation and Dataset</a></h3>
+                    <div class="publication-authors">
+                        <strong>Yufei Wei</strong>, Fuzhang Han, Yanmei Jiao, Zhuqing Zhang, Yiyuan Pan, Wenjun Huang, Li Tang, Huan Yin, Xiaqing Ding, Rong Xiong, Yue Wang
+                    </div>
+                    <div class="publication-venue">
+                        IEEE Transactions on Field Robotics (T-FR) - <strong>Under Review</strong>
+                    </div>
+                    <div class="publication-description">
+                        机器人控制需要无需事后修正的因果位姿估计。本工作提出一套基于滤波的多相机 VILO 系统，可在多个互不重叠的孤立地图间运行。确定性初始化与 IMU 辅助的 2 点最小解算器在 80%+ 外点率下保持鲁棒。为在长期外观变化下验证系统，我们采集了一份历时 9 个月、55 公里的校园数据集，并提出与控制需求对齐、保持因果性的评估指标。
+                    </div>
+                    <div class="publication-links">
+                        <a href="https://arxiv.org/abs/2412.04287" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+                        <a href="https://github.com/WeiYuFei0217/BEV-DWPVO" target="_blank"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+<h3 style="margin-top: 40px; margin-bottom: 20px; color: #0066cc;">合作论文</h3>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/YYF_CoRL2026.jpg" alt="TDC" onerror="this.parentElement.innerHTML='Image<br>TDC'">
+    </div>
+    <div class="publication-content">
+        <h3>TDC: Sim-to-Real Transferable Directional Compliance for Contact-Rich Manipulation</h3>
+        <div class="publication-authors">
+            Yifei Yang, Anzhe Chen, Zhenjie Zhu, Kechun Xu, Yunxuan Mao, <strong>Yufei Wei</strong>, Lu Chen, Rong Xiong, Yue Wang
+        </div>
+        <div class="publication-venue">
+            arXiv preprint - <strong>Under Review</strong>
+        </div>
+        <div class="publication-description">
+            TDC（Transferable Directional Compliance，可迁移方向柔顺）仅用仿真数据即可在接触丰富操作中实现自适应柔顺。其核心洞见是：力的调控可分解为随时间变化但可 sim-to-real 迁移、由任务几何决定的方向分量，以及对动力学敏感但可手工调定的幅值分量。方向分量被实例化为任务坐标系与逐轴控制增益，由一个从预训练 VLA 模型适配而来的视觉运动策略预测，并在自动生成的仿真示范上通过模仿学习训练；部署时，导纳控制器将这些预测与人工指定的刚度和目标力旋量融合，实现自适应柔顺。在开微波炉、轴孔装配、白板擦拭与开门四个真实任务上，它取得了高成功率与对外部扰动的鲁棒性。<strong>（审稿中）</strong>
+        </div>
+        <div class="publication-links">
+            <a href="https://arxiv.org/abs/2602.14174" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/YSH_IROS2026.jpg" alt="VLN IROS2026" onerror="this.parentElement.innerHTML='Image<br>VLN-IROS2026'">
+    </div>
+    <div class="publication-content">
+        <h3>Revisiting Topological Graphs for Macro Action based Closed-loop Reinforcement Learning of Vision Language Navigation in Continuous Environment</h3>
+        <div class="publication-authors">
+            Shuhao Ye, Sitong Mao, Yuxiang Cui, <strong>Yufei Wei</strong>, Xuan Yu, Shichao Zhai, Wen Chen, Shunbo Zhou, Rong Xiong, Yue Wang
+        </div>
+        <div class="publication-venue">
+            2026 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) - Accepted
+        </div>
+        <div class="publication-description">
+                        本工作将连续环境中的视觉语言导航（VLN-CE）重新表述为分层马尔可夫决策过程，把场景抽象为拓扑图，使高层策略在由前沿节点构成的宏观动作空间上规划，并由一个免训练的底层控制器充当状态转移，从而显著压缩决策时域、使闭环强化学习变得可行。进一步提出动作感知价值头，在动态前沿动作空间下评估状态价值以驱动基于图的 PPO，在 R2R-CE 与 RxR-CE 基准上取得最先进的性能。
+                    </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/LWT_JFR2026.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>Learning to Tune a Mobile Robot Planner: Formulation, Architecture, and Sim-to-Real</h3>
+        <div class="publication-authors">
+            Wangtao Lu, Wei Zhang, <strong>Yufei Wei</strong>, Rong Xiong, Chaoqun Wang, Yue Wang
+        </div>
+        <div class="publication-venue">
+            Journal of Field Robotics - <strong>Under Review</strong>
+        </div>
+        <div class="publication-description">
+                        本工作针对基于学习的规划器调参的架构瓶颈，提出一种多速率分层框架，将导航解耦为协同的低频调参（1Hz）、中频规划（10Hz）与高频控制（50Hz）三个回路。循环协同训练策略实现了耦合策略的稳定学习；地形自适应控制器通过在多样地形上保持一致的跟踪性能，实现鲁棒的零样本 sim-to-real 迁移，优于最先进的自动调参与端到端方法。<strong>（审稿中）</strong>
+                    </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/LWT_ICRA2025.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>Reinforcement Learning for Adaptive Planner Parameter Tuning: A Perspective on Hierarchical Architecture</h3>
+        <div class="publication-authors">
+            Wangtao Lu, <strong>Yufei Wei</strong>, Jiadong Xu, Wenhao Jia, Liang Li, Rong Xiong, Yue Wang
+        </div>
+        <div class="publication-venue">
+            2025 IEEE International Conference on Robotics and Automation (ICRA), pp. 3883-3889
+        </div>
+        <div class="publication-description">
+                        本工作提出一种集成低频参数调节（1Hz）、中频规划（10Hz）与高频控制（50Hz）的分层架构用于自主导航。引入基于 RL 的反馈控制器，以最小化仅靠参数调节无法消除的跟踪误差。通过在参数调节网络与控制器之间交替训练，该方法在 BARN Challenge 上取得 98% 成功率与 10.2 秒完成时间，夺得第一名。真实世界实验展示了 100% 成功率与出色的跟踪精度。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/11128541" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/ZDK_CCC2025.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>Towards Agricultural Vehicle Autonomy: Adaptive PID Control for Precise Path Tracking with Visual-Inertial Localization</h3>
+        <div class="publication-authors">
+            Dongkun Zhang, <strong>Yufei Wei</strong>, Xujiong Feng, Jinpeng Gan, Zhi Huang, Huanyu Jiang, Zidong Yang, Daxu Zhao, Rong Xiong, Yue Wang
+        </div>
+        <div class="publication-venue">
+            2025 44th Chinese Control Conference (CCC), pp. 4630-4636
+        </div>
+        <div class="publication-description">
+                        本工作提出一套低成本的自主农机系统，用视觉惯性定位替代昂贵的 RTK-GPS。所提出的模块化设计将四相机与 IMU 结合以实现鲁棒位姿估计，并采用基于 FOPTD 模型的自适应 PID 控制器实现精确路径跟踪。田间实验表明，仅用视觉定位即可实现低于 4.38cm 的误差、超过 90% 的轨迹点落在 7.5cm 阈值内，验证了其在实际农业自动化中的可行性。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/11178414" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/LS_ACAR2025.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>SeqBEV: Bayesian Sequential Localization Using BEV LiDAR Map</h3>
+        <div class="publication-authors">
+            Sha Lu, <strong>Yufei Wei</strong>, Rong Xiong, Yue Wang
+        </div>
+        <div class="publication-venue">
+            2025 IEEE International Conference on Real-time Computing and Robotics (RCAR), pp. 407-412
+        </div>
+        <div class="publication-description">
+                        SeqBEV 提出一套鲁棒的序列式 LiDAR 定位框架，采用紧凑的 BEV 地图表征与贝叶斯滤波，应对稀疏地图（50m 节点间距）等挑战场景。通过基于 NCC 的模板匹配进行不确定性感知的位姿分布估计，并以递归贝叶斯融合保持时序一致性，它在 NCLT 数据集上将 Recall@1 提升 23.33%，并将定位误差降至 0.62m（50 百分位），在特征不足环境中展现出优于单帧与描述子方法的鲁棒性。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/11139435" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/WF_IROS2025.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>Human-Guided Robotic-Assistance Handheld Continuum Medical Robot System</h3>
+        <div class="publication-authors">
+            Fei Wang, Changhao Luo, Zexi Zhao, Pingyu Xiang, <strong>Yufei Wei</strong>, Ke Qiu, Yufei Wei, Yue Wang, Rong Xiong and Haojian Lu
+        </div>
+        <div class="publication-venue">
+            2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) - Accepted
+        </div>
+        <div class="publication-description">
+                        HRHC 提出一套人在环的手持连续体医疗机器人系统，弥合手动器械与全自动机器人方案之间的鸿沟，面向微创手术。其模块化设计集成双目视觉以实现实时深度感知、IMU 驱动的直觉式控制，以及在狭小空间中的毫米级灵巧操作，在保持便携与自然操作的同时扩展了外科医生的能力。我的贡献：多模态感知平台的传感系统架构设计与软件部署。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/11246719" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/LWT_RAL2025.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>Demonstration Data-Driven Parameter Adjustment for Trajectory Planning in Highly Constrained Environments</h3>
+        <div class="publication-authors">
+            Wangtao Lu, Lin Chen, Yunkai Wang, <strong>Yufei Wei</strong>, Zifei Wu, Rong Xiong, Yue Wang
+        </div>
+        <div class="publication-venue">
+            IEEE Robotics and Automation Letters (RA-L), 2024
+        </div>
+        <div class="publication-description">
+                        本工作提出一种基于示范数据驱动的 RL 框架，利用 CGAN 判别器在轨迹空间示范与参数空间学习之间架起桥梁。结合异步控制器架构，该方法的收敛速度比纯 RL 快 5 倍（0.6M 对 3M 步），并在 BARN Challenge 中夺得第一名，真实世界实验验证了其出色的 sim-to-real 迁移能力。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10749994" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/HFZ_IROS2024.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>VIVO: A Visual-Inertial-Velocity Odometry with Online Calibration in Challenging Condition</h3>
+        <div class="publication-authors">
+            Fuzhang Han, Shenhan Jia, Jiyu Yu, <strong>Yufei Wei</strong>, Wenjun Huang, Yue Wang, Rong Xiong
+        </div>
+        <div class="publication-venue">
+            2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 8571-8578
+        </div>
+        <div class="publication-description">
+                        VIVO 提出一种紧耦合的视觉-惯性-速度里程计，带在线外参标定，将高频速度测量直接融入基于 MSCKF 的 VIO。在轮式机器人与高速四足（最高 3 m/s）上验证，它在挑战性条件下取得优于 OpenVINS/MSF 的鲁棒性与更低 ATE，并比 ORB-SLAM3 高 2 倍效率。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10801486" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/ZH_IROS2024.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>OTVIC: A Dataset with Online Transmission for Vehicle-to-Infrastructure Cooperative 3D Object Detection</h3>
+        <div class="publication-authors">
+            He Zhu, Yunkai Wang, Quyu Kong, <strong>Yufei Wei</strong>, Xunlong Xia, Bing Deng, Rong Xiong, Yue Wang
+        </div>
+        <div class="publication-venue">
+            2024 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS), pp. 10732-10739
+        </div>
+        <div class="publication-description">
+                        OTVIC 提出首个带在线传输的真实世界车路协同感知数据集，捕捉了高速公路环境中的动态延迟、高速场景（70-110 km/h）与带宽约束。所提出的 LfFormer 框架通过将基础设施感知结果编码为 transformer 查询实现鲁棒的后融合，在保持低通信带宽与对延迟、丢包强鲁棒性的同时，带来 2.3% 的 mAP 提升。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10802656" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+
+<div class="publication-item">
+    <div class="publication-image">
+        <img src="paper_images/YHX_ICRA2024.jpg" alt="Multi-cam VIL" onerror="this.parentElement.innerHTML='Image<br>Multi-cam'">
+    </div>
+    <div class="publication-content">
+        <h3>Adapting for Calibration Disturbances: A Neural Uncalibrated Visual Servoing Policy</h3>
+        <div class="publication-authors">
+            Hongxiang Yu, Anzhe Chen, Kechun Xu, Dashun Guo, <strong>Yufei Wei</strong>, Zhongxiang Zhou, Xuebo Zhang, Yue Wang, Rong Xiong
+        </div>
+        <div class="publication-venue">
+            2024 IEEE International Conference on Robotics and Automation (ICRA), pp. 17417-17423
+        </div>
+        <div class="publication-description">
+                        NUVS 针对工业视觉伺服中费时费力的标定难题，提出一种可适应相机标定扰动的神经免标定策略。它从历史观测中估计标定嵌入以调制神经控制器，并在仿真中利用 PBVS 监督，兼具经典方法的扰动适应能力与学习方法的大收敛域，在大初始位姿偏差下的标定扰动场景中优于 IBUVS。
+                    </div>
+        <div class="publication-links">
+            <a href="https://ieeexplore.ieee.org/abstract/document/10610364" target="_blank"><i class="fas fa-file-pdf"></i> Paper</a>
+        </div>
+    </div>
+</div>
+        </section>
+
+        <!-- Research Projects Section -->
+        <section id="research-projects">
+            <h2>科研项目</h2>
+
+            <div class="activity-item">
+                <h3>🚀 浙江大学 & xx 研究院 — 足式 xx 探测机器人项目</h3>
+                <p>
+                    设计并主导研发了一套面向复杂地形自主探测的全栈感知与导航系统。搭建了集成多传感器栈（LiDAR、双目相机、IMU）与鲁棒标定流程，实现了激光惯性 / 视觉惯性定位，并结合基于深度学习的双目匹配完成稠密三维重建。在此基础上，研发了一套面向资源受限平台的轻量级地形分析与路径规划框架，直接在点云上提取地面、刻画地形几何（凹凸特征）、识别可通行区域，并通过基于图的规划生成优化路径。在 100+ 个自动化测试场景中验证，证明了系统在杂乱、高度不规则环境中的可靠导航性能。
+                </p>
+                <p style="color: #999; font-size: 0.8em; font-style: italic; margin-top: 0.5em;">* xx：因保密需要隐去</p>
+            </div>
+
+            <div class="activity-item">
+                <h3>🌾 省重点研发计划 — 农业自动化系统</h3>
+                <p>
+                    设计并主导研发了一套面向农机的纯视觉导航系统，涵盖完整的感知架构、感知栈与视觉惯性里程计框架。搭建了带专用减震结构的四相机与 IMU 感知模块，并实现了面向低纹理、高振动农业环境优化的多视图视觉惯性融合系统。将系统与误差补偿跟踪控制器集成，在插秧机农田试验中相对 RTK-INS 真值实现了厘米级轨迹精度。
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <h3>🦾 浙江大学 & 浙江人形机器人创新中心 — 轮式人形感知与导航系统</h3>
+                <p>
+                    为轮式人形机器人平台研发了感知与导航子系统。从多相机输入构建以视觉为中心的 BEV 表征，生成稠密代价地图与 3 自由度位姿估计。将感知层与 A* 全局规划、TEB 局部优化集成，为人形机器人的轮式底盘实现了可靠、可避障的视觉导航。
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <h3>🚙 浙江大学 & 阿里巴巴 — 自动驾驶数据采集平台</h3>
+                <p>
+                    设计了自动驾驶数据采集车的感知硬件架构，包括四相机、LiDAR、IMU、GPS/RTK 与 V2X 感知模块的结构设计与整车集成。实现了多传感器标定流程，并在整车平台上部署了多视图视觉-IMU-GPS 里程计算法，以确保准确可靠的运动估计。开展了数据一致性检查与真值对齐，支撑高质量多模态数据集的生成。
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <h3>🐕 浙江大学 & 山东大学 — 四足机器人集群项目</h3>
+                <p>
+                    在四足平台上部署了基于双目视觉的三维重建，并构建以 BEV 为中心的空间表征，用于多机器人场景下的鲁棒感知。实现了 BEV 里程计，为下游规划模块提供可靠的位姿估计，使集群内的协同运动成为可能。
+                </p>
+            </div>
+        </section>
+
+        <!-- Internship & Industrial Experience Section -->
+        <section id="experience">
+            <h2>工业界经历</h2>
+
+            <div class="activity-item">
+                <h3>🏢 Momenta（自动驾驶）— 世界模型预研组（2025.12 - 2026.03）</h3>
+                <p>
+                    作为构建下一代端到端自动驾驶世界模型团队的核心成员，我参与设计并实现了一个自监督、动作条件化的未来特征预测模块（JEPA 式、无需标注）：它融合当前与历史 BEV 隐变量，并以自车未来轨迹为条件预测未来视觉特征，引导 BEV 表征建模场景动态。团队采用“先预训练世界模型、再微调规划”的两阶段范式，使该辅助监督在零增加车端推理成本的前提下提升规划质量，并探索了自监督 ViT 特征作为感知骨干及其训练到部署的完整管线。
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <h3>🏢 深圳 InnoX 科创学院 — 自动驾驶中心（2022.2 - 2022.9）</h3>
+                <p>
+                    为城市环境中的自动驾驶清扫车构建了一套语义线段建图系统。该系统利用深度语义分割提取灯杆、路面标线等静态线性地标。通过将这些地标表示为紧凑的线段而非稠密点云，它能滤除动态交通参与者、应对多变的天气与光照条件，并在资源受限的车载计算机上实现实时 LiDAR-IMU SLAM。
+                </p>
+            </div>
+        </section>
+
+        <!-- Awards, Patents & Projects Section -->
+        <section id="awards">
+            <h2>竞赛获奖、专利与项目</h2>
+
+            <div class="award-category">
+                <h3>🏆 竞赛获奖</h3>
+                <div class="award-item">
+                    <strong>全国冠军&队长</strong> - 2021年全国大学生工程实践与创新能力大赛 智能网联汽车设计赛道
+                </div>
+                <div class="award-item">
+                    <strong>全国冠军&队长</strong> - 第十五届全国大学生智能汽车竞赛 百度智能驾驶组
+                </div>
+                <div class="award-item">
+                    <strong>全国亚军&队长</strong> - 2025年全国仿真创新应用大赛 机器人系统仿真方向
+                </div>
+                <div class="award-item">
+                    <strong>全国冠军&队长</strong> - 第三届中国高校智能机器人创意大赛 ROS无人机组
+                </div>
+                <div class="award-item">
+                    <strong>全国冠军&队长</strong> - 第二十三届中国机器人及人工智能大赛 无人驾驶挑战赛 & 深度学习智能车（双赛项）
+                </div>
+                <div class="award-item">
+                    <strong>省赛一等奖&队长</strong> - 第十五届“西门子杯”中国智能制造挑战赛 离散行业自动化
+                </div>
+                <div class="award-item">
+                    <strong>冠军&队长</strong> - 武汉市2021年“微派·种子杯”创新性软件编程PK赛
+                </div>
+                <div class="award-item">
+                    <strong>冠军&队长</strong> - 华中科技大学第十四届瑞萨杯智能车大赛
+                </div>
+                <div class="award-item">
+                    <strong>二等奖</strong> - 全国大学生电工数学建模、MathorCup高校数学建模、“华中杯”大学生数学建模
+                </div>
+            </div>
+
+            <div class="award-category">
+                <h3>📜 已授权发明专利</h3>
+                <div class="patent-item">
+                    <strong>CN202411981529.6</strong> - 基于鸟瞰视角表征和可微分加权Procrustes求解器的单目视觉里程计方法和系统（第一学生发明人）
+                </div>
+                <div class="patent-item">
+                    <strong>CN202411248996.8</strong> - 基于鸟瞰视角表征的单目视觉里程计系统及其方法（第一学生发明人）
+                </div>
+                <div class="patent-item">
+                    <strong>CN202310966258.6</strong> - 一种农机插秧系统中的减震相机-IMU装置及导航装置及导航方法（第一学生发明人）
+                </div>
+                <div class="patent-item">
+                    <strong>CN202110979800.2</strong> - 一种双阶段自动驾驶车辆调头轨迹规划方法（第一学生发明人）
+                </div>
+                <div class="patent-item">
+                    <strong>CN202110971772.X</strong> - 一种基于模仿学习和强化学习的高速运动车辆控制方法（第一学生发明人）
+                </div>
+                <div class="patent-item">
+                    <strong>CN202110568966.5</strong> - 基于双目视觉和深度学习的车辆避障方法与电子设备（第一学生发明人）
+                </div>
+            </div>
+
+            <div class="award-category">
+                <h3>🌱 本科生创业项目</h3>
+                <div class="patent-item">
+                    <strong>省级大创</strong> - “基于双目视觉和深度学习的轻量级无人配送车”（初创项目，优秀结题）
+                </div>
+            </div>
+        </section>
+
+        <!-- Beyond Research Section -->
+        <section id="beyond-research">
+            <h2>研究之外</h2>
+
+            <div class="activity-item">
+                <h3>🏫 广西玉林-古城小学支教</h3>
+                <p>
+                    2019 年盛夏，我随支教队来到广西玉林古城小学，兼任英语老师和班主任，在潮湿闷热与忽晴忽雨的天气里，与几十个性格迥异的孩子一起度过了难忘的三周。最初从慌乱铺床、紧张上课，到熟悉校园每个角落、能够从容站上讲台，我在备课、带班、家访和无数次“崩溃-重整”的循环中，慢慢学会了承担、耐心与真正意义上的陪伴。孩子们一句“老师，你讲得好有意思”、几份终于不再抄袭的作业，和他们在暴雨后操场上肆意奔跑的身影，始终是我跨过高烧、争执与自我怀疑的力量来源。
+                </p>
+                <p>
+                    小时候看过一部关于拐卖的纪录片，从那时起，我便一直怀揣着想要解决拐卖的问题。这个梦想至今仍遥远，但在这所偏远的山村小学，在 2019 年那个潮湿的夏天，我第一次真切意识到：教育与守护是预防伤害的第一道防线，也是为孩子们在深山穹顶上打开的一扇天窗。离开古城小学后，我仍常想起那些在黄昏灯光下写作业、在最后一晚的月光下与我道别的孩子们——愿我当时笨拙却真诚的努力，能在他们的人生里留下哪怕一点点温暖而长久的光。
+                </p>
+            </div>
+
+            <div class="activity-item">
+                <h3>💼 创业经历</h3>
+                <p>
+                    在本科阶段，我组建并领导了一支共计11人的创始团队，发起了一款智能人体工学椅项目，致力于解决久坐带来的腰背健康问题。我们目标是通过“可感知、会学习、能主动支撑”的椅背系统，提供超越传统座椅的个性化支撑体验。我主导了整体产品规划与技术路线设计，从市场调研、用户需求分析，到功能定义、系统架构设计与项目实施，全面推动了方案的落地和团队的协同。
+                </p>
+                <p>
+                    我们的核心技术结合了压力传感矩阵、背部传感器与机器学习算法，能够精准识别用户身份、臀部位置与坐姿，并据此自动调整支撑力度。我们的支撑系统采用机械推杆与多分区气囊组合，机械部分负责大范围调节，气囊则提供精细调整，支持全自动、半自动和手动调节。通过App与实体按键的交互，系统能不断学习并优化用户习惯，实现个性化的追背与腰骶骨支撑效果。在此过程中，我带领团队运用第一性原理分析问题，并通过最小子系统迭代验证方案，成功完成了三代功能样机，涵盖了从结构设计、控制电路到算法验证、供应链与专利布局的完整流程，并顺利获得了天使轮融资机会。
+                </p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>© 2026 魏雨飞 (Yufei Wei).</p>
+            <p>最后更新：2026 年 6 月</p>
+        </footer>
+    </div>
+</body>
+</html>
