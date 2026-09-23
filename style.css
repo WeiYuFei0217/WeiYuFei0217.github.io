@@ -1,0 +1,343 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        .profile-header {
+            display: grid;
+            grid-template-columns: 1fr 250px;
+            gap: 40px;
+            margin-bottom: 60px;
+            padding: 40px 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .profile-info h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .profile-info .title {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .profile-photo {
+            position: relative;
+        }
+
+        .profile-photo img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+
+        .contact-info a:hover {
+            color: #0066cc;
+        }
+
+        .wechat-qr {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: #f0f0f0;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+        }
+
+        section h3 {
+            font-size: 1.35em;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        section p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        /* News Section */
+        .news-item {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            border-left: 3px solid #0066cc;
+            text-align: justify;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: #0066cc;
+            margin-right: 10px;
+        }
+
+        /* Education Section */
+        .education-item {
+            margin-bottom: 25px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 6px;
+        }
+
+        .education-item h3 {
+            color: #0066cc;
+        }
+
+        .education-details {
+            color: #666;
+            margin-top: 5px;
+        }
+
+        /* Publications Section */
+        .publication-item {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 20px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            transition: box-shadow 0.3s;
+            align-items: center;
+        }
+
+        .publication-item:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .publication-image {
+            width: 200px;
+            height: 150px;
+            background: #e0e0e0;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9em;
+            overflow: hidden;
+        }
+
+        .publication-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .publication-content h3 {
+            font-size: 1.35em;
+            margin-bottom: 10px;
+        }
+
+        .publication-content h3 a {
+            color: #1a1a1a;
+            text-decoration: none;
+        }
+
+        .publication-content h3 a:hover {
+            color: #0066cc;
+        }
+
+        .publication-authors {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+
+        .publication-venue {
+            color: #0066cc;
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+        }
+
+        .publication-description {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.5;
+            text-align: justify;
+        }
+
+        .publication-links {
+            margin-top: 10px;
+        }
+
+        .publication-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .publication-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Awards Section */
+        .award-category {
+            margin-bottom: 30px;
+        }
+
+        .award-category h3 {
+            color: #0066cc;
+            margin-bottom: 15px;
+        }
+
+        .award-item, .patent-item {
+            margin-bottom: 12px;
+            padding: 10px 15px;
+            background: #f9f9f9;
+            border-left: 3px solid #0066cc;
+            border-radius: 4px;
+        }
+
+        .award-item strong {
+            color: #333;
+        }
+
+        /* Projects Section */
+        .project-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 8px;
+            border-left: 4px solid #0066cc;
+        }
+
+        .project-item h3 {
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            color: #555;
+        }
+
+        /* Beyond Research Section */
+        .activity-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+        }
+
+        .activity-item h3 {
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            color: #999;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 60px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .profile-header {
+                grid-template-columns: 1fr;
+            }
+
+            .publication-item {
+                grid-template-columns: 1fr;
+            }
+
+            .publication-image {
+                width: 100%;
+            }
+        }
+
+        .scholar-link {
+            display: inline-block;
+            margin-left: 10px;
+            color: #0066cc;
+            text-decoration: none;
+            font-size: 0.9em;
+        }
+
+        .scholar-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Language Switch */
+        .lang-switch {
+            text-align: right;
+            margin-bottom: 10px;
+            font-size: 0.9em;
+        }
+
+        .lang-switch a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .lang-switch a:hover {
+            text-decoration: underline;
+        }
+
+        .lang-switch .current {
+            color: #999;
+            font-weight: 600;
+        }
+
+        .lang-switch .sep {
+            color: #ccc;
+            margin: 0 6px;
+        }
