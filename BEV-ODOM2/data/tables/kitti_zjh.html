@@ -1,0 +1,66 @@
+<table class="rtable">
+<thead>
+<tr><th rowspan="2"><b>Methods</b></th><th rowspan="2"><b>Metric</b></th><th colspan="3"><b>KITTI</b></th><th colspan="5"><b>ZJH-VO</b></th></tr>
+<tr><th><b>09</b></th><th><b>10</b></th><th><b><i>Average</i></b></th><th><b>F-09</b></th><th><b>F-04</b></th><th><b>F-01</b></th><th><b>F-00</b></th><th><b><i>Average</i></b></th></tr>
+</thead>
+<tbody>
+<tr class="group"><td colspan="10"><i>Traditional geometry-based method</i></td></tr>
+<tr><td rowspan="4">ORB-SLAM3</td><td>RTE** (%)</td><td>14.89</td><td>8.47</td><td><i>11.68</i></td><td><span class="gray">9.63</span></td><td><span class="gray">14.76</span></td><td><span class="gray">4.57</span></td><td><span class="gray">6.77</span></td><td><span class="gray"><i>8.94</i></span></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>1.38</td><td>0.93</td><td><i>1.15</i></td><td><span class="gray">13.67</span></td><td><span class="gray">28.26</span></td><td><span class="gray">6.95</span></td><td><span class="gray">7.97</span></td><td><span class="gray"><i>14.21</i></span></td></tr>
+<tr><td>ATE** (m)</td><td>53.69</td><td>16.15</td><td><i>34.92</i></td><td><span class="gray">6.34</span></td><td><span class="gray">5.73</span></td><td><span class="gray">2.03</span></td><td><span class="gray">3.00</span></td><td><span class="gray"><i>4.28</i></span></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>40.63</td><td>7.33</td><td><i>23.98</i></td><td><span class="gray">6.12</span></td><td><span class="gray">5.54</span></td><td><span class="gray">1.91</span></td><td><span class="gray">1.66</span></td><td><span class="gray"><i>3.81</i></span></td></tr>
+<tr class="group"><td colspan="10"><i>Pretrained or auxiliary-supervised methods (reference)</i></td></tr>
+<tr><td rowspan="4">VOLDOR<br>(F. Model)</td><td>RTE** (%)</td><td>58.45</td><td>68.64</td><td><i>63.55</i></td><td>14.76</td><td>8.13</td><td>38.23</td><td>35.88</td><td><i>24.25</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>0.60</td><td>0.77</td><td><i>0.69</i></td><td>36.33</td><td>84.80</td><td>34.04</td><td>28.91</td><td><i>46.02</i></td></tr>
+<tr><td>ATE** (m)</td><td>168.83</td><td>158.81</td><td><i>163.82</i></td><td>11.61</td><td>11.60</td><td>24.79</td><td>24.29</td><td><i>18.07</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>152.98</td><td>125.78</td><td><i>139.38</i></td><td>11.63</td><td>11.23</td><td>20.54</td><td>24.45</td><td><i>16.96</i></td></tr>
+<tr><td rowspan="4">TartanVO<br>KITTI: reported<br>ZJH: retrained</td><td>RTE* (%)</td><td>6.00</td><td>6.89</td><td><i>6.45</i></td><td>5.98</td><td>5.27</td><td>23.27</td><td>6.71</td><td><i>10.31</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>3.11</td><td>2.73</td><td><i>2.92</i></td><td>14.76</td><td>18.46</td><td>29.79</td><td>6.58</td><td><i>17.40</i></td></tr>
+<tr><td>ATE* (m)</td><td>53.84</td><td>28.50</td><td><i>41.17</i></td><td>3.52</td><td>3.16</td><td>14.00</td><td>2.48</td><td><i>5.79</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>27.52</td><td>23.65</td><td><i>25.59</i></td><td>3.48</td><td>3.14</td><td>11.70</td><td>2.19</td><td><i>5.13</i></td></tr>
+<tr><td rowspan="4">DF-VO<br>KITTI: reported<br>ZJH: Pre &amp; F. Model</td><td>RTE<sup>*/**</sup> (%)</td><td>2.40</td><td><b>1.82</b></td><td><b><i>2.11</i></b></td><td>31.31</td><td>105.42</td><td>55.16</td><td>48.11</td><td><i>60.00</i></td></tr>
+<tr><td>RRE<sup>*/**</sup> (°/100&thinsp;m)</td><td><b>0.24</b></td><td>0.38</td><td><i>0.31</i></td><td>88.26</td><td>141.32</td><td>117.93</td><td>75.13</td><td><i>105.66</i></td></tr>
+<tr><td>ATE<sup>*/**</sup> (m)</td><td>7.73</td><td><b>3.00</b></td><td><u><i>5.37</i></u></td><td>116.79</td><td>64.45</td><td>45.99</td><td>19.71</td><td><i>61.73</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>7.65</td><td><b>2.73</b></td><td><u><i>5.19</i></u></td><td>10.56</td><td>11.96</td><td>24.02</td><td>18.94</td><td><i>16.37</i></td></tr>
+<tr><td rowspan="4">DROID-SLAM<br>(Pretrained Model)</td><td>RTE** (%)</td><td>21.01</td><td>18.73</td><td><i>19.87</i></td><td>16.85</td><td>6.98</td><td>14.15</td><td>25.00</td><td><i>15.75</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>0.33</td><td><b>0.23</b></td><td><u><i>0.28</i></u></td><td>25.50</td><td>26.36</td><td>6.15</td><td>30.44</td><td><i>22.11</i></td></tr>
+<tr><td>ATE** (m)</td><td>73.71</td><td>45.52</td><td><i>59.61</i></td><td>12.52</td><td>8.91</td><td>8.82</td><td>17.00</td><td><i>11.81</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>74.31</td><td>17.27</td><td><i>45.79</i></td><td>11.65</td><td>8.33</td><td>3.57</td><td>10.78</td><td><i>8.58</i></td></tr>
+<tr><td rowspan="4">DPVO<br>(Pretrained Model)</td><td>RTE** (%)</td><td>17.70</td><td>4.47</td><td><i>11.09</i></td><td>14.67</td><td>6.55</td><td>11.08</td><td>26.65</td><td><i>14.74</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td><b>0.24</b></td><td><b>0.23</b></td><td><b><i>0.23</i></b></td><td>53.48</td><td><b>3.33</b></td><td>4.37</td><td>17.42</td><td><i>19.65</i></td></tr>
+<tr><td>ATE** (m)</td><td>64.80</td><td>10.98</td><td><i>37.89</i></td><td>11.11</td><td>7.46</td><td>6.94</td><td>18.08</td><td><i>10.90</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>64.77</td><td>10.99</td><td><i>37.88</i></td><td>11.10</td><td>6.08</td><td><b>3.20</b></td><td>12.29</td><td><i>8.16</i></td></tr>
+<tr><td rowspan="4">MASt3R-SLAM<br>(Pretrained Model)</td><td>RTE* (%)</td><td>/</td><td>/</td><td>/</td><td>14.38</td><td>8.40</td><td>46.39</td><td>34.97</td><td><i>26.03</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>/</td><td>/</td><td>/</td><td>8.48</td><td>9.18</td><td>9.78</td><td>14.44</td><td><i>10.47</i></td></tr>
+<tr><td>ATE* (m)</td><td>/</td><td>/</td><td>/</td><td>11.32</td><td>11.06</td><td>23.51</td><td>23.19</td><td><i>17.27</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>/</td><td>/</td><td>/</td><td>11.38</td><td>10.03</td><td>16.00</td><td>22.60</td><td><i>15.00</i></td></tr>
+<tr><td rowspan="4">VGGT-SLAM<br>(Pretrained Model)</td><td>RTE** (%)</td><td>22.90</td><td>14.50</td><td><i>18.70</i></td><td>8.84</td><td>5.39</td><td><u>8.29</u></td><td>15.37</td><td><i>9.47</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>2.86</td><td>3.06</td><td><i>2.96</i></td><td>32.77</td><td>16.81</td><td><b>3.77</b></td><td>5.01</td><td><i>14.59</i></td></tr>
+<tr><td>ATE** (m)</td><td>72.35</td><td>20.39</td><td><i>46.37</i></td><td>6.67</td><td>4.06</td><td><u>5.46</u></td><td>10.69</td><td><i>6.72</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>72.47</td><td>19.88</td><td><i>46.18</i></td><td>6.10</td><td>2.68</td><td><u>3.24</u></td><td>3.94</td><td><i>3.99</i></td></tr>
+<tr class="group"><td colspan="10"><i>In-domain pose-only trained methods (main comparison)</i></td></tr>
+<tr><td rowspan="4">DeepVO<br>(Retrained)</td><td>RTE* (%)</td><td>33.55</td><td>30.46</td><td><i>32.01</i></td><td>51.05</td><td>37.52</td><td>56.08</td><td>63.16</td><td><i>51.95</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>14.31</td><td>14.42</td><td><i>14.37</i></td><td>106.52</td><td>116.07</td><td>102.27</td><td>111.58</td><td><i>109.11</i></td></tr>
+<tr><td>ATE* (m)</td><td>59.38</td><td>180.10</td><td><i>119.74</i></td><td>25.65</td><td>18.71</td><td>14.72</td><td>21.17</td><td><i>20.06</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>51.58</td><td>168.44</td><td><i>110.01</i></td><td>10.79</td><td>10.04</td><td>14.36</td><td>15.81</td><td><i>12.75</i></td></tr>
+<tr><td rowspan="4">SSVO<br>(Our Reimpl.)</td><td>RTE* (%)</td><td>71.47</td><td>78.57</td><td><i>75.02</i></td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>0.67</td><td>0.39</td><td><i>0.53</i></td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td>ATE* (m)</td><td>203.34</td><td>174.77</td><td><i>189.05</i></td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>30.98</td><td><u>5.60</u></td><td><i>18.29</i></td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td rowspan="4">VoT<br>(Our Reimpl.)</td><td>RTE* (%)</td><td>91.02</td><td>85.11</td><td><i>88.06</i></td><td>2.59</td><td>4.27</td><td>24.74</td><td>8.64</td><td><i>10.06</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>22.28</td><td>34.16</td><td><i>28.22</i></td><td>8.31</td><td>13.02</td><td>35.55</td><td>13.21</td><td><i>17.52</i></td></tr>
+<tr><td>ATE* (m)</td><td>106.88</td><td>42.66</td><td><i>74.77</i></td><td>1.38</td><td>2.73</td><td>14.87</td><td>3.93</td><td><i>5.73</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>79.89</td><td>36.76</td><td><i>58.32</i></td><td>1.29</td><td>2.68</td><td>13.48</td><td>2.78</td><td><i>5.06</i></td></tr>
+<tr><td rowspan="4">BEV-DWPVO</td><td>RTE* (%)</td><td>2.13</td><td><u>3.24</u></td><td><i>2.69</i></td><td>2.75</td><td>3.74</td><td>16.62</td><td>5.50</td><td><u><i>7.15</i></u></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>0.65</td><td>1.15</td><td><i>0.90</i></td><td>7.18</td><td>9.28</td><td>12.72</td><td><b>1.98</b></td><td><u><i>7.79</i></u></td></tr>
+<tr><td>ATE* (m)</td><td>8.69</td><td>9.04</td><td><i>8.87</i></td><td>1.75</td><td>2.42</td><td>10.68</td><td>3.39</td><td><i>4.56</i></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td>8.11</td><td>7.80</td><td><i>7.96</i></td><td>1.67</td><td>2.40</td><td>6.34</td><td>2.54</td><td><u><i>3.24</i></u></td></tr>
+<tr><td rowspan="4">BEV-ODOM</td><td>RTE* (%)</td><td><u>1.72</u></td><td>3.61</td><td><i>2.67</i></td><td><u>1.91</u></td><td><u>3.47</u></td><td>20.29</td><td><u>3.46</u></td><td><i>7.28</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>0.39</td><td>0.53</td><td><i>0.46</i></td><td><u>6.39</u></td><td><u>7.83</u></td><td>13.28</td><td><u>4.41</u></td><td><i>7.98</i></td></tr>
+<tr><td>ATE* (m)</td><td><u>6.35</u></td><td>8.42</td><td><i>7.39</i></td><td><u>1.15</u></td><td><u>2.00</u></td><td>11.00</td><td><u>1.63</u></td><td><u><i>3.95</i></u></td></tr>
+<tr><td>ATE<sup>†</sup> (m)</td><td><u>4.62</u></td><td>7.30</td><td><i>5.96</i></td><td><u>1.12</u></td><td><u>1.91</u></td><td>10.94</td><td><b>0.77</b></td><td><i>3.68</i></td></tr>
+<tr class="ours"><td rowspan="4">BEV-ODOM2<br>(Ours)</td><td>RTE* (%)</td><td><b>1.37</b></td><td>3.46</td><td><u><i>2.42</i></u></td><td><b>1.67</b></td><td><b>3.29</b></td><td><b>6.57</b></td><td><b>3.08</b></td><td><b><i>3.65</i></b></td></tr>
+<tr class="ours"><td>RRE* (°/100&thinsp;m)</td><td>0.35</td><td>0.52</td><td><i>0.44</i></td><td><b>4.59</b></td><td>8.48</td><td><u>3.88</u></td><td>5.38</td><td><b><i>5.58</i></b></td></tr>
+<tr class="ours"><td>ATE* (m)</td><td><b>2.89</b></td><td><u>6.08</u></td><td><b><i>4.49</i></b></td><td><b>1.01</b></td><td><b>1.83</b></td><td><b>3.69</b></td><td><b>1.58</b></td><td><b><i>2.03</i></b></td></tr>
+<tr class="ours"><td>ATE<sup>†</sup> (m)</td><td><b>2.72</b></td><td>5.97</td><td><b><i>4.35</i></b></td><td><b>1.00</b></td><td><b>1.82</b></td><td>3.43</td><td><u>1.30</u></td><td><b><i>1.89</i></b></td></tr>
+</tbody></table>

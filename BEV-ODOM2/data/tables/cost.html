@@ -1,0 +1,42 @@
+<table class="rtable">
+<thead>
+<tr><th>Method</th><th>Resolution</th><th>FPS</th><th>GPU Mem<br>(GB)</th><th>GPU Util<br>(%)</th></tr>
+</thead>
+<tbody>
+<tr class="group"><td colspan="5"><i>Traditional geometry-based method</i></td></tr>
+<tr><td rowspan="2">ORB-SLAM3</td><td>224×384</td><td>63.11</td><td>-</td><td>-</td></tr>
+<tr><td>320×640</td><td>59.68</td><td>-</td><td>-</td></tr>
+<tr class="group"><td colspan="5"><i>Pretrained or auxiliary-supervised methods (reference)</i></td></tr>
+<tr><td rowspan="2">VOLDOR</td><td>224×384</td><td>17.27</td><td>1.27</td><td>63.0</td></tr>
+<tr><td>320×640</td><td>12.30</td><td>1.83</td><td>71.7</td></tr>
+<tr><td rowspan="2">TartanVO</td><td>224×384</td><td>63.45</td><td>2.026</td><td>56.0</td></tr>
+<tr><td>320×640</td><td>59.27</td><td>2.155</td><td>60.9</td></tr>
+<tr><td rowspan="2">DF-VO</td><td>224×384</td><td>9.37</td><td>3.037</td><td>-</td></tr>
+<tr><td>320×640</td><td>6.26</td><td>3.291</td><td>-</td></tr>
+<tr><td rowspan="2">DROID-SLAM</td><td>224×384</td><td>10.58</td><td>21.138</td><td>54.7</td></tr>
+<tr><td>320×640</td><td>7.30</td><td>21.231</td><td>54.0</td></tr>
+<tr><td rowspan="2">DPVO</td><td>224×384</td><td>18.88</td><td>4.226</td><td>65.9</td></tr>
+<tr><td>320×640</td><td>18.03</td><td>4.251</td><td>68.7</td></tr>
+<tr><td rowspan="2">MASt3R-SLAM</td><td>224×384</td><td>12.62</td><td>4.703</td><td>78.7</td></tr>
+<tr><td>320×640</td><td>12.62</td><td>4.703</td><td>78.7</td></tr>
+<tr><td rowspan="2">VGGT-SLAM</td><td>224×384</td><td>8.36</td><td>14.259</td><td>41.6</td></tr>
+<tr><td>320×640</td><td>8.36</td><td>14.259</td><td>41.6</td></tr>
+<tr class="group"><td colspan="5"><i>In-domain pose-only trained methods (main comparison)</i></td></tr>
+<tr><td rowspan="2">DeepVO</td><td>224×384</td><td>416.70</td><td>3.176</td><td>41.3</td></tr>
+<tr><td>320×640</td><td>348.24</td><td>4.366</td><td>38.5</td></tr>
+<tr><td rowspan="2">SSVO</td><td>224×384</td><td>35.78</td><td>1.785</td><td>71.2</td></tr>
+<tr><td>320×640</td><td>35.51</td><td>1.996</td><td>74.4</td></tr>
+<tr><td rowspan="2">VoT</td><td>224×384</td><td>66.90</td><td>2.718</td><td>59.7</td></tr>
+<tr><td>320×640</td><td>25.04</td><td>3.216</td><td>87.2</td></tr>
+<tr><td rowspan="2">BEV-DWPVO</td><td>224×384</td><td>21.61</td><td>2.566</td><td>40.0</td></tr>
+<tr><td>320×640</td><td>18.21</td><td>3.138</td><td>49.2</td></tr>
+<tr><td rowspan="2">BEV-ODOM</td><td>224×384</td><td>92.84</td><td>2.289</td><td>59.7</td></tr>
+<tr><td>320×640</td><td>72.64</td><td>2.503</td><td>68.7</td></tr>
+<tr class="ours"><td rowspan="2">BEV-ODOM2<br>(Ours)</td><td>224×384</td><td>69.52</td><td>2.304</td><td>54.4</td></tr>
+<tr class="ours"><td>320×640</td><td>56.62</td><td>2.525</td><td>64.3</td></tr>
+<tr class="group"><td colspan="5"><i>Edge Deployment on NVIDIA Jetson AGX Orin</i></td></tr>
+<tr class="ours"><td rowspan="2">BEV-ODOM2<br>(FP32)</td><td>224×384</td><td>16.91</td><td>1.625</td><td>63.7</td></tr>
+<tr class="ours"><td>320×640</td><td>14.14</td><td>1.650</td><td>76.7</td></tr>
+<tr class="ours"><td rowspan="2">BEV-ODOM2<br>(TRT Backbone)</td><td>224×384</td><td>21.84</td><td>1.576</td><td>66.2</td></tr>
+<tr class="ours"><td>320×640</td><td>16.73</td><td>1.600</td><td>78.0</td></tr>
+</tbody></table>

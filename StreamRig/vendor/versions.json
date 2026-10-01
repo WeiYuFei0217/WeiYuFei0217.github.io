@@ -1,0 +1,11 @@
+{
+  "three": "0.180.0",
+  "esbuild": "0.25.10",
+  "bundle": "three + OrbitControls + Line2/LineGeometry/LineMaterial",
+  "licenses": [
+    "THREE-LICENSE.txt",
+    "NUNITO-OFL.txt"
+  ],
+  "runtime_network_dependencies": false,
+  "bundle_sha256": "96c7418291a8b7324fcc239490cad39823a140830282bf577448f9f436502874"
+}
