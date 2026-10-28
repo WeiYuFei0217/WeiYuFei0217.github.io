@@ -1,0 +1,38 @@
+<table class="rtable">
+<thead>
+<tr><th rowspan="2"><b>Methods</b></th><th rowspan="2"><b>Ex. Supv.</b></th><th rowspan="2"><b>Metric</b></th><th colspan="5"><b>NCLT</b></th><th colspan="5"><b>Oxford</b></th></tr>
+<tr><th><b>02-02</b></th><th><b>02-19</b></th><th><b>03-17</b></th><th><b>08-20</b></th><th><b><i>Average</i></b></th><th><b>11-12</b></th><th><b>15-13</b></th><th><b>16-14</b></th><th><b>17-12</b></th><th><b><i>Average</i></b></th></tr>
+</thead>
+<tbody>
+<tr class="group"><td colspan="13"><i>Traditional geometry-based method</i></td></tr>
+<tr><td rowspan="2">ORB-SLAM3</td><td rowspan="2">✗</td><td>RTE** (%)</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>65.22</td><td>952.41</td><td>191.75</td><td>77.44</td><td><i>321.70</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>19.83</td><td>10.81</td><td>16.17</td><td>19.31</td><td><i>16.53</i></td></tr>
+<tr class="group"><td colspan="13"><i>Pretrained or auxiliary-supervised methods (reference)</i></td></tr>
+<tr><td rowspan="2">VOLDOR<br>(F. Model)</td><td rowspan="2">✓</td><td>RTE** (%)</td><td>46.76</td><td>41.77</td><td>40.39</td><td>45.62</td><td><i>43.64</i></td><td>1123.22</td><td>76.02</td><td>142.27</td><td>324.06</td><td><i>416.39</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>17.11</td><td>19.26</td><td>26.20</td><td>19.26</td><td><i>20.46</i></td><td>15.98</td><td>20.59</td><td>15.42</td><td>12.96</td><td><i>16.24</i></td></tr>
+<tr><td rowspan="2">TartanVO<br>(Pretrained Model)</td><td rowspan="2">✓</td><td>RTE** (%)</td><td>47.48</td><td>50.97</td><td>48.10</td><td>52.23</td><td><i>49.69</i></td><td>74.43</td><td>83.35</td><td>75.51</td><td>72.53</td><td><i>76.45</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>39.51</td><td>38.48</td><td>39.21</td><td>37.68</td><td><i>38.72</i></td><td>32.56</td><td>25.68</td><td>31.63</td><td>33.23</td><td><i>30.77</i></td></tr>
+<tr><td rowspan="2">DF-VO<br>(Pre &amp; F. Model)</td><td rowspan="2">✓</td><td>RTE** (%)</td><td>/</td><td>/</td><td>41.03</td><td>89.44</td><td><i>65.23</i></td><td>26.24</td><td>28.26</td><td>35.87</td><td>42.48</td><td><i>33.21</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>/</td><td>/</td><td>25.52</td><td>27.81</td><td><i>26.66</i></td><td>2.03</td><td>2.34</td><td>1.85</td><td>2.81</td><td><i>2.25</i></td></tr>
+<tr><td rowspan="2">DROID-SLAM<br>(Pretrained Model)</td><td rowspan="2">✓</td><td>RTE** (%)</td><td>34.07</td><td>110.18</td><td>44.17</td><td>41.80</td><td><i>57.55</i></td><td>35.18</td><td>136.58</td><td>133.31</td><td>25.82</td><td><i>82.72</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>14.23</td><td>10.50</td><td>10.67</td><td>12.04</td><td><i>11.86</i></td><td>1.89</td><td>1.43</td><td>1.99</td><td>3.47</td><td><i>2.19</i></td></tr>
+<tr><td rowspan="2">DPVO<br>(Pretrained Model)</td><td rowspan="2">✓</td><td>RTE** (%)</td><td>/</td><td>41.45</td><td>37.72</td><td>78.87</td><td><i>52.68</i></td><td>96.53</td><td>98.41</td><td>102.10</td><td>155.51</td><td><i>113.14</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>/</td><td>9.74</td><td>14.38</td><td>16.70</td><td><i>13.61</i></td><td>29.26</td><td>28.00</td><td>28.37</td><td>29.14</td><td><i>28.69</i></td></tr>
+<tr><td rowspan="2">MASt3R-SLAM<br>(Pretrained Model)</td><td rowspan="2">✓</td><td>RTE* (%)</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td rowspan="2">VGGT-SLAM<br>(Pretrained Model)</td><td rowspan="2">✓</td><td>RTE** (%)</td><td>48.56</td><td>50.62</td><td>53.64</td><td>68.66</td><td><i>55.37</i></td><td>62.92</td><td>74.21</td><td>72.16</td><td>57.31</td><td><i>66.65</i></td></tr>
+<tr><td>RRE** (°/100&thinsp;m)</td><td>38.65</td><td>38.75</td><td>41.12</td><td>38.30</td><td><i>39.21</i></td><td>14.08</td><td>21.26</td><td>24.12</td><td>14.57</td><td><i>18.51</i></td></tr>
+<tr class="group"><td colspan="13"><i>In-domain pose-only trained methods (main comparison)</i></td></tr>
+<tr><td rowspan="2">DeepVO</td><td rowspan="2">✗</td><td>RTE* (%)</td><td>31.67</td><td>18.55</td><td>21.23</td><td>25.07</td><td><i>24.13</i></td><td>25.14</td><td>27.45</td><td>31.75</td><td>37.76</td><td><i>30.52</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>14.54</td><td>8.11</td><td>9.66</td><td>13.02</td><td><i>11.33</i></td><td>7.87</td><td>8.14</td><td>11.71</td><td>12.37</td><td><i>10.02</i></td></tr>
+<tr><td rowspan="2">SSVO<br>(Our Reimpl.)</td><td rowspan="2">✗</td><td>RTE* (%)</td><td>58.00</td><td>/</td><td>51.31</td><td>/</td><td><i>54.66</i></td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>41.22</td><td>/</td><td>43.49</td><td>/</td><td><i>42.35</i></td><td>/</td><td>/</td><td>/</td><td>/</td><td>/</td></tr>
+<tr><td rowspan="2">VoT<br>(Our Reimpl.)</td><td rowspan="2">✗</td><td>RTE* (%)</td><td>40.27</td><td>28.57</td><td>23.02</td><td>26.31</td><td><i>29.54</i></td><td>70.33</td><td>16.61</td><td>70.06</td><td>63.79</td><td><i>55.20</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>19.77</td><td>14.34</td><td>13.05</td><td>15.70</td><td><i>15.71</i></td><td>27.08</td><td>3.51</td><td>28.17</td><td>24.39</td><td><i>20.78</i></td></tr>
+<tr><td rowspan="2">BEV-DWPVO</td><td rowspan="2">✗</td><td>RTE* (%)</td><td><u>8.32</u></td><td>7.52</td><td><u>8.20</u></td><td><u>10.63</u></td><td><u><i>8.67</i></u></td><td><u>4.87</u></td><td><u>5.26</u></td><td><b>7.89</b></td><td>9.67</td><td><u><i>6.92</i></u></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td><u>3.14</u></td><td>3.08</td><td><u>3.57</u></td><td><u>4.35</u></td><td><u><i>3.53</i></u></td><td><u>1.02</u></td><td><u>1.08</u></td><td><u>1.07</u></td><td><u>2.15</u></td><td><u><i>1.33</i></u></td></tr>
+<tr><td rowspan="2">BEV-ODOM</td><td rowspan="2">✗</td><td>RTE* (%)</td><td>10.89</td><td><u>6.27</u></td><td>8.77</td><td>13.89</td><td><i>9.95</i></td><td>7.21</td><td>7.90</td><td>11.55</td><td><u>8.02</u></td><td><i>8.67</i></td></tr>
+<tr><td>RRE* (°/100&thinsp;m)</td><td>4.74</td><td><u>2.47</u></td><td>3.73</td><td>6.31</td><td><i>4.31</i></td><td>1.38</td><td>1.89</td><td>1.14</td><td>2.55</td><td><i>1.74</i></td></tr>
+<tr class="ours"><td rowspan="2">BEV-ODOM2<br>(Ours)</td><td rowspan="2">✗</td><td>RTE* (%)</td><td><b>5.30</b></td><td><b>4.03</b></td><td><b>3.66</b></td><td><b>5.75</b></td><td><b><i>4.68</i></b></td><td><b>3.38</b></td><td><b>3.24</b></td><td><u>7.98</u></td><td><b>4.76</b></td><td><b><i>4.84</i></b></td></tr>
+<tr class="ours"><td>RRE* (°/100&thinsp;m)</td><td><b>2.70</b></td><td><b>1.62</b></td><td><b>1.71</b></td><td><b>2.72</b></td><td><b><i>2.19</i></b></td><td><b>0.82</b></td><td><b>0.87</b></td><td><b>0.99</b></td><td><b>1.33</b></td><td><b><i>1.00</i></b></td></tr>
+</tbody></table>
