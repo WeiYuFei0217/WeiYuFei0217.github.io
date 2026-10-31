@@ -577,7 +577,13 @@
             <div class="activity-item">
                 <h3>🏢 Astribot (星尘智能) - AI Lab (2026.09 - Present)</h3>
                 <p>
-                    Working on Lumo-3, Astribot's embodied world-action model, and responsible for action injection. Within an action-conditioned future-state prediction framework, I study how to encode the robot arm's future states into conditioning inputs aligned with the pretrained visual modality.
+                    I am a core contributor to Lumo 3, Astribot's next-generation embodied brain model, fine-tuning models on 20,000 hours of real-robot data to evaluate and select candidate actions before execution.
+                </p>
+                <p>
+                    Action-conditioned world model (AC-WM): I study visual action encoding, converting robot-arm actions into control videos that, together with the current state, condition predictions of future scene changes. To address viewpoint misalignment caused by head motion, I proposed a conditioning representation based on reprojecting a grid fixed in 3D space. I also explore temporal causal constraints and adaptation with failure and recovery data to address temporal inconsistencies, hallucinated grasps, and object hallucinations.
+                </p>
+                <p>
+                    Action-outcome scorer (Scorer): Given a task instruction, the scorer estimates task progress from AC-WM videos of candidate action outcomes, then ranks and selects actions. Built on a pretrained vision-language model, it uses trajectory time position as weak supervision for LoRA fine-tuning and joint training of a progress prediction head.
                 </p>
             </div>
 
@@ -591,7 +597,13 @@
             <div class="activity-item">
                 <h3>🏢 Momenta (Autonomous Driving) - World Model Pre-research Group (2025.12 - 2026.03)</h3>
                 <p>
-                    As a core team member working on world-model pretraining for the R7 model, I co-designed and implemented an action-conditioned future-feature prediction module. Conditioned on BEV latents and the ego vehicle's future trajectory, it predicts future visual features in a JEPA style, so the BEV representation learns scene dynamics without labels. The team adopted a two-stage recipe: pretrain the world model, then fine-tune planning. Working with the engineering team, I took the module through vehicle-model adaptation, accuracy alignment, and quantized deployment to the edge computing platform, and used on-road testing to catch corner cases that offline metrics miss, then iterated on them. The module now runs as a core feature of the R7 model.
+                    I was a core contributor to R7, Momenta's next-generation onboard driving model. Our world-model pretraining method became a key feature of the main R7 system and shipped in production vehicles.
+                </p>
+                <p>
+                    World-model pretraining: I co-designed and implemented an action-conditioned future-feature prediction module that takes the current BEV latent and future ego trajectory as inputs and predicts visual features several seconds ahead. Following the JEPA paradigm, future-image features extracted by a frozen DINOv3 encoder provide self-supervised targets, teaching the BEV representation scene dynamics. The method achieved the best offline planning metrics in full-scale internal comparisons.
+                </p>
+                <p>
+                    On-vehicle deployment and iteration: I worked with the engineering team on vehicle-model adaptation, accuracy alignment, and quantized deployment to edge hardware. In on-road tests, the model was judged to deliver a better driving experience than the baseline trained with supervised pretraining. I also used these tests to identify corner cases that offline metrics missed and iterated on the model accordingly.
                 </p>
             </div>
 
