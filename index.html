@@ -577,40 +577,28 @@
             <div class="activity-item">
                 <h3>🏢 Astribot (星尘智能) - AI Lab (2026.09 - Present)</h3>
                 <p>
-                    I am a core contributor to Lumo 3, Astribot's next-generation embodied brain model, fine-tuning models on 20,000 hours of real-robot data to evaluate and select candidate actions before execution.
-                </p>
-                <p>
-                    Action-conditioned world model (AC-WM): I study visual action encoding, converting robot-arm actions into control videos that, together with the current state, condition predictions of future scene changes. To address viewpoint misalignment caused by head motion, I proposed a conditioning representation based on reprojecting a grid fixed in 3D space. I also explore temporal causal constraints and adaptation with failure and recovery data to address temporal inconsistencies, hallucinated grasps, and object hallucinations.
-                </p>
-                <p>
-                    Action-outcome scorer (Scorer): Given a task instruction, the scorer estimates task progress from AC-WM videos of candidate action outcomes, then ranks and selects actions. Built on a pretrained vision-language model, it uses trajectory time position as weak supervision for LoRA fine-tuning and joint training of a progress prediction head.
+                    I am a core contributor to Lumo 3, an embodied brain model, fine-tuning its action-conditioned world model (AC-WM) and action-outcome scorer (Scorer) on 20,000 hours of real-robot data. For AC-WM, I encode robot-arm actions as control videos and combine them with the current state to predict execution outcomes. To address misalignment caused by head motion, I proposed reprojecting a grid fixed in 3D space. I also explore temporal causal constraints and adaptation with failure and recovery data. Built on a pretrained vision-language model, Scorer uses trajectory time position as weak supervision for LoRA fine-tuning and joint training of a progress head, scoring predicted videos against task instructions to select candidate actions.
                 </p>
             </div>
 
             <div class="activity-item">
                 <h3>🏢 Zhejiang Humanoid Robot Innovation Center - Navigation Algorithm Department (2026.04 - 2026.08)</h3>
                 <p>
-                    The center is building a multi-camera 3D reconstruction foundation model that gives indoor service robots relocalization and odometry for navigation and downstream VLN; I owned its freeze-and-bridge track on top of 3D foundation models. I first cast relocalization and multi-camera rig odometry as one problem, with known intra-group geometry and an unknown inter-group pose, which became G2G (CoRL 2026). The model was trained only on humanoid walking data generated from 3DGS reconstructions of real scenes, and it transfers zero-shot to the real robot while still relocalizing more accurately than every compared method. To remove the drift of chaining pairwise estimates in indoor and outdoor surround-view localization and loop closure, I then designed StreamRig, a streaming scheme that perceives, compresses, caches, and relates each rig through anchor snapshots. It keeps only a small KV cache, beats monocular streaming methods in accuracy and speed, and is deployed on the center's humanoid robots.
+                    I addressed limited multi-camera group alignment in 3D foundation models and the predominantly monocular focus of streaming methods. To meet humanoid robots' need for continuous surround-view sensing, I extended foundation-model capabilities and developed streaming multi-camera perception. G2G transfers zero-shot from simulation to real robots; StreamRig outperforms monocular streaming methods in accuracy and speed and is deployed on the center's robots.
                 </p>
             </div>
 
             <div class="activity-item">
                 <h3>🏢 Momenta (Autonomous Driving) - World Model Pre-research Group (2025.12 - 2026.03)</h3>
                 <p>
-                    I was a core contributor to R7, Momenta's next-generation onboard driving model. Our world-model pretraining method became a key feature of the main R7 system and shipped in production vehicles.
-                </p>
-                <p>
-                    World-model pretraining: I co-designed and implemented an action-conditioned future-feature prediction module that takes the current BEV latent and future ego trajectory as inputs and predicts visual features several seconds ahead. Following the JEPA paradigm, future-image features extracted by a frozen DINOv3 encoder provide self-supervised targets, teaching the BEV representation scene dynamics. The method achieved the best offline planning metrics in full-scale internal comparisons.
-                </p>
-                <p>
-                    On-vehicle deployment and iteration: I worked with the engineering team on vehicle-model adaptation, accuracy alignment, and quantized deployment to edge hardware. In on-road tests, the model was judged to deliver a better driving experience than the baseline trained with supervised pretraining. I also used these tests to identify corner cases that offline metrics missed and iterated on the model accordingly.
+                    As a core contributor to R7 world-model pretraining, I co-designed and implemented an action-conditioned module that predicts future visual features from the BEV latent and future ego trajectory. Future-image features extracted by a frozen DINOv3 encoder serve as JEPA self-supervised targets, and the method achieved the best open-loop planning metrics in full-scale internal comparisons. I worked with engineers on vehicle-model adaptation, accuracy alignment, and quantized onboard deployment, then evaluated driving behavior through closed-loop on-road tests and iterated on the model. These tests showed better perceived driving quality than the supervised-pretraining baseline. The method became a key feature of the main R7 system and shipped in production vehicles.
                 </p>
             </div>
 
             <div class="activity-item">
                 <h3>🏢 Shenzhen InnoX Academy - Autonomous Driving Center (2022.02 - 2022.08)</h3>
                 <p>
-                    Built a semantic line segment mapping system for autonomous street sweeping vehicles in urban environments. The system uses deep semantic segmentation to extract static linear landmarks like lamp posts and road markings. By representing these landmarks as compact line segments rather than dense point clouds, it filters out dynamic traffic participants, handles varying weather and lighting conditions, and enables real-time LiDAR-IMU SLAM on resource-constrained onboard computers.
+                    I built a lightweight semantic line-segment map for autonomous street sweepers under onboard compute and map-storage constraints. I used semantic segmentation to extract linear landmarks such as lamp posts and traffic signs, then geometric association and 3D aggregation across frames. Map storage is about 0.05% of COLMAP, and the system runs in real time on automotive-grade hardware.
                 </p>
             </div>
         </section>
